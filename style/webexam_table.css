@@ -1,0 +1,11 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 16em;
+}
+
+.header {
+    background-color: lightgray;
+    font-weight: bold;
+    text-align: center;
+}

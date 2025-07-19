@@ -4,17 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title> My second web page example </title>
-    <style>
-        h2.redTextWhiteBG {
-            color: rgb(240, 240, 248);
-            background-color: rgb(243, 55, 64);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./style/example.css">
 </head>
 
 <body>
     <div>
-        <h1 style="color: blue; background-color: rgb(184, 243, 184);"> เนื้อหาโดยสังเขป </h1>
+        <h1 class="middle"> เนื้อหาโดยสังเขป </h1>
         <p align='center' style="background-color: powderblue;">
             <i>กีต้าร์โปร่ง</i>...เป็นเครื่องดนตรียอดนิยม เพราะหาซื้อได้ง่าย ราคาไม่แพง สามารถฝึกด้วยตัวเองได้
             ใช้เล่นดนตรีได้หลายสไตล์ ซึ่งการเล่นให้ชำนาญมันต้องอาศัยการฝึกซ้อมอย่างสม่ำเสมอแล้วจะค่อยๆ
@@ -24,9 +19,9 @@
         </p>
     </div>
     <div>
-        <h2 style="color:rgb(240, 240, 248); background-color: rgb(243, 55, 64);">สารบัญ</h2>
-        <h3>บทที่ 1</h3><br>
-        <p style="background-color: bisque;">
+        <h2>สารบัญ</h2>
+        <h3 class="middle">บทที่ 1</h3><br>
+        <p>
         <ol>
             <li>คอร์ดและการอ่านตารางคอร์ด</li>
             <li>การตีคอร์ด
@@ -41,17 +36,16 @@
             <li>ตัวอย่างการตีคอร์ดกับเพลง</li>
             <li>คอร์ดเพลงฮิต GMM Grammy</li>
         </ol>
-        <hr style="height: 0.2px; width:50%; border-width: 5px; color: crimson; 
-                background-color: lavender;">
+        <hr style="height: 0.2px; width:50%; border-width: 5px; color: crimson; background-color: lavender;">
         </p>
-        <p>
+        <p id="center">
             โน้ต<br>
             น้ำหนัก<br>
             สำเนียง
         </p>
     </div>
     <div>
-        <h2 style="color:rgb(240, 240, 248); background-color: rgb(243, 55, 64);">รายละเอียดหนังสือ</h2>
+        <h2>รายละเอียดหนังสือ</h2>
         <p>
         <dl>
             <dt>ISBN</dt>
@@ -64,7 +58,7 @@
         </p>
     </div>
     <div>
-        <h2 class="redTextWhiteBG">Water Chemical Symbol</h2>
+        <h2>Water Chemical Symbol</h2>
         <p>H<sub>2</sub>O</p>
     </div>
 </body>

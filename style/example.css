@@ -1,0 +1,25 @@
+h1 {
+    color: blue;
+    background-color: rgb(184, 243, 184);
+}
+
+h2 {
+    color: rgb(240, 240, 248);
+    background-color: rgb(243, 55, 64)
+}
+
+h3 {
+    color: rgb(0,0,128);
+    background-color: rgb(233,233,18);
+}
+
+p {
+    background-color: powderblue;
+}
+
+.middle {
+    text-align: center;
+}
+#center {
+    text-align: center;
+}
