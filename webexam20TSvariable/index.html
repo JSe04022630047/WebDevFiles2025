@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-green-100 grid place-content-center mt-2 font-sans">
+  <div class="bg-white p-14 rounded-lg shadow-md flex flex-col gap-4 w-120">
+    <!-- 1) ช่องกรอกข้อมูล -->
+    <input
+      type="text" id="name-input" placeholder="Enter your name"
+      class="p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+    <!-- 2) ปุ่มกด -->
+    <button id="greet-button"
+      class="bg-blue-500 text-white p-3 rounded-md 
+            hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      Say Hello
+    </button>
+    <!-- 3) ผลลัพธ์ปรากฎที่นี่ -->
+    ผลลัพธ์:
+    <p id="result-output" class="text-center text-red-700 h-6"></p>
+    <script type="module" src="./src/main.ts"></script>
+  </div>
+</body>
+
+</html>

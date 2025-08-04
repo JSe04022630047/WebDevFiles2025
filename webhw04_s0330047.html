@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Sales</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link
+        ref="https://fonts.googleapis.com/css?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 1) Header Part -->
+    <header class="p-2 bg-gray-800 text-white">
+        <div class="flex justify-between items-center container">
+            <!-- Company Logo -->
+            <div class="mx-auto flex items-center space-x-4">
+                <img src="./img/hw4/hw4logo.png" alt="Company Logo" class="h-8 rounded">
+                <h1 class="text-2xl">ห้าคืนสยองที่เฟรดดี้ส์</h1>
+            </div>
+            <!--5 Options Menu (Right Part) -->
+            <nav class="mx-auto">
+                <ul class="justify-end flex space-x-4">
+                    <li><a href="#">หน้าหลัก</a></li>
+                    <li><a href="#">สินค้า</a></li>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                    <li><a href="#">บริการ</a></li>
+                    <li><a href="#">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <!-- 2) Main Content Part -->
+        <main class="flex container grid grid-cols-1 md:grid-cols-4 gap-3 px-8">
+            <!--Aside Part (with 5 Options Menu) -->
+            <aside class="flex container flex-col bg-red-50 rounded shadow-md justify-end-safe p-4">
+                <h3 class="text-3xl text-bold">หมวดหมู่</h3>
+                <nav>
+                    <ul class="px-3 text-lg">
+                        <li><a href="#">แอนิมาโทรนิกส์</a></li>
+                        <li><a href="#">โครงกระดูกภายในหุ่นยนต์</a></li>
+                        <li><a href="#">หุ่นยนต์รักษาความปลอดภัย</a></li>
+                        <li><a href="#">หุ่นยนต์ของเอ็ดวิน</a></li>
+                        <li><a href="#">อุปกรณ์</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!--Main Content Area (with 4 Cards with Robot Details) -->
+            <section class="grid col-span-3 grid-cols-1 lg:grid-cols-3 gap-3 mb-6">
+                <!--Robot Card 1 -->
+                <div class="bg-blue-50 p-4 rounded-md shadow-sm flex flex-col h-full">
+                    <img src="./img/hw4/freddy.png" alt="Freddy" class="h-48 w-96 object-cover mx-auto">
+                    <div class="flex-grow">
+                        <h4 class="text-xl mt-4">เฟรดดี้</h4>
+                        <p>มาสคอตหลักของร้าน Freddy Fazbear's Pizza และตัวละครหลักของแฟรนไชส์นี้ เฟรดดี้ หัวหน้าและนักร้องของวงดนตรีแอนิมาโทรนิกส์บนเวทีการแสดงของร้านอาหารของเขา</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-lg font-bold">$1,500</span>
+                        <button class="rounded p-2 bg-blue-500 text-white hover:bg-blue-600">View Details</button>
+                    </div>   
+                </div>
+                <!-- Robot Card 2 -->
+                <div class="bg-blue-50 p-4 rounded-md shadow-sm flex flex-col h-full">
+                    <img src="./img/hw4/bonnie.png" alt="Bonnie" class="h-48 w-96 object-cover mx-auto">
+                    <div class="flex-grow">
+                        <h4 class="text-xl mt-4">บอนนี่</h4>
+                        <p>กระต่ายแอนิมาโทรนิกส์และมือกีตาร์ของวงดนตรีแอนิมาโทรนิกส์บนเวทีการแสดงของร้าน Freddy Fazbear's Pizza</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-lg font-bold">$15,000</span>
+                        <button class="rounded p-2 bg-blue-500 text-white hover:bg-blue-600">View Details</button>
+                    </div>                
+                </div>
+                <!--Robot Card 3 -->
+                <div class="bg-blue-50 p-4 rounded-md shadow-sm flex flex-col h-full">
+                    <img src="./img/hw4/chica.png" alt="Chica" class="h-48 w-96 object-cover mx-auto">
+                    <div class="flex-grow">
+                        <h4 class="text-xl mt-4">ชิก้า</h4>
+                        <p>เป็นไก่แอนิมาโทรนิกส์และเป็นนักร้องสนับสนุนธีมอาหารของวงดนตรีแอนิมาโทรนิกส์บนเวทีการแสดงของ Freddy Fazbear's Pizza</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-lg font-bold">$8,000</span>
+                        <button class="rounded p-2 bg-blue-500 text-white hover:bg-blue-600">View Details</button>
+                    </div>  
+                </div>
+                <!-- Robot Card 4 -->
+                <div class="bg-blue-50 p-4 rounded-md shadow-sm flex flex-col h-full">
+                    <img src="./img/hw4/foxy.png" alt="Foxy" class="h-48 w-96 object-cover mx-auto">
+                    <div class="flex-grow">
+                        <h4 class="text-xl mt-4">ฟ็อกซี่</h4>
+                        <p>เป็นแอนิมาโทรนิกส์จิ้งจอกและนักแสดงโจรสลัดที่เลิกผลิตแล้วจากร้าน Freddy Fazbear's Pizza</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-lg font-bold">$8,000</span>
+                        <button class="rounded p-2 bg-blue-500 text-white hover:bg-blue-600">View Details</button>
+                    </div>  
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- 3) Footer Part -->
+    <footer class="bg-blue-500 text-white p-4 mt-6 text-center">
+        <div>
+            <!-- Copyright Message -->
+            <p>&copy; 2025 ฟาซแบร์ เอนเตอร์เทนเมนท์. สงวนลิขสิทธิ์
+                reserved.</p>
+            <!--Terms and Conditions Message -->
+            <p>
+                <a href="#" class="">ข้อกำหนดและเงื่อนไข</a>
+                <span></span>
+                <a href="#" class=" ">นโยบายความเป็นส่วนตัว</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

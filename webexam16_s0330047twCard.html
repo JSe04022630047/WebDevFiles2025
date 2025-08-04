@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Layout Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container mx-auto p-4">
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">บริการของเรา (Card List)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration200">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">ออกแบบเว็บไซต์</h3>
+                <p class="text-gray-600">สร้างสรรค์เว็บไซต์ที่สวยงามและใช้งานง่าย ตรงตามความ
+                    ต้องการธุรกิจของคุณ</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration200">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">พัฒนาแอปพลิเคชัน</h3>
+                <p class="text-gray-600">พัฒนาแอปพลิเคชันบนมือถือและเว็บที่ตอบโจทย์ผู้ใช้งาน
+                    และธุรกิจของคุณ</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration200">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">ให้คำปรึกษาด้าน IT</h3>
+                <p class="text-gray-600">ให้คำปรึกษาและวางแผนกลยุทธ์ด้านเทคโนโลยีเพื่อการ
+                    เติบโตอย่างยั่งยืน</p>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bggray-800 dark:border-gray-700 mx-auto">
+        <a href="#">
+            <img class="rounded-t-lg" src="/img/dustbowl3.png" alt="" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:textwhite">Noteworthy technology
+                    acquisitions 2021</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest
+                enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center
+       text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none
+       focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokewidth="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="max-w-md rounded overflow-hidden shadow-lg bg-white flex mx-auto my-8">
+        <img class="w-1/3 object-cover" src="/img/dustbowl2.jpg" alt="ภาพตัวอย่าง">
+        <div class="w-2/3 p-6">
+            <h3 class="font-bold text-xl mb-2">การ์ดแนวนอน</h3>
+            <p class="text-gray-700 text-base">
+                การ์ดนี้ถูกจัดวางในแนวนอน โดยมีรูปภาพอยู่ด้านซ้ายและเนื้อหาอยู่ด้านขวา
+            </p>
+        </div>
+    </div>
+
+    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-auto my-8">
+        <div class="bg-gray-800 text-white px-6 py-4">
+            <h3 class="font-bold text-xl">ส่วนหัวการ์ด</h3>
+        </div>
+        <div class="px-6 py-4">
+            <p class="text-gray-700 text-base">เนื้อหาการ์ด</p>
+        </div>
+        <div class="bg-gray-100 px-6 py-4">
+            <p class="text-gray-600 text-sm">ส่วนท้ายการ์ด</p>
+        </div>
+    </div>
+
+    <div
+        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto">
+        <form class="space-y-6" action="#">
+            <h5 class="text-xl font-medium text-gray-900 dark:text-white">Sign in to our
+                platform</h5>
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:textwhite">Your
+                    email</label>
+                <input type="email" name="email" id="email"
+                    class="bg-gray-50 border border-gray300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="name@company.com" required />
+            </div>
+            <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-900
+dark:text-white">Your password</label>
+                <input type="password" name="password" id="password" placeholder="••••••••"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ringblue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                    required />
+            </div>
+            <div class="flex items-start">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value=""
+                            class="w-4 h-4 border bordergray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ringoffset-gray-800"
+                            required />
+                    </div>
+                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:textgray-300">Remember
+                        me</label>
+                </div>
+                <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue500">Lost Password?</a>
+            </div>
+            <button type="submit"
+                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login
+                to
+                your account</button>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue500">Create account</a>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
